@@ -428,6 +428,7 @@ def leaves_today(request):
     result = []
     for leave in leaves:
         result.append({
+            "id": leave.id,
             "email": leave.email.email,
             "department": leave.department,
             "start_date": str(leave.start_date),
